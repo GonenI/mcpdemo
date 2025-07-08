@@ -1,0 +1,18 @@
+{
+    "servers": {
+        "demo-http-server": {
+            "type": "http",
+            "url": "http://127.0.0.1:8000/mcp/"
+        },
+        "io-mcp-server": {
+            "type": "stdio",
+            "command": "uv",
+            "args": [
+                "run",
+                "mcp",
+                "run",
+                "..\\mcpserver\\mcpserver.py"
+            ]
+        }
+    }
+}
